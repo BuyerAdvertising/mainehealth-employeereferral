@@ -1,0 +1,664 @@
+/**************************** GLOBAL ****************************/
+html {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  margin: 0px;
+  color: #000;
+  -webkit-text-size-adjust: none;
+  font-family: "Noto Sans", "Arial", sans-serif;
+  font-size: 0.8em;
+  line-height: 1.4em;
+  height: 100%;
+}
+img {
+  border: 0;
+}
+.scalable {
+  max-width: 100% !important;
+  height: auto !important;
+}
+a:link,
+a:active,
+a:visited {
+  color: #CB3340 !important;/* Edited by LZ 6-4-2024 - was #b41e3b */
+  outline: none;
+  text-decoration: none;
+}
+a:hover {
+  color: #d06d81 !important;
+  text-decoration: none;
+}
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  /* remove for standard buttons */
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  -moz-appearance: none;
+  appearance: none;
+}
+.imgover {
+  cursor: pointer;
+  width: auto;
+}
+.imagefit img {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.clearfix {
+  clear: both;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+.nowrap {
+  white-space: nowrap;
+  display: inline-block;
+  overflow: hidden;
+}
+.bold {
+  font-weight: 700;
+}
+.extrabold {
+  font-weight: 900;
+  font-size: 120%;
+}
+.rule {
+  margin: 10px 0px;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #d6d6d6;
+  height: 1px;
+  clear: both;
+}
+#mainContainer {
+  min-height: 100%;
+  min-width: 320px;
+  position: relative;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.global-inside {
+  max-width: 1500px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+#about-jhhs {
+  padding: 4% !important;
+  background-color: rgba(3, 74, 111, 0.5);
+  width: 80%;
+}
+.global-inside-700px {
+  max-width: 700px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 2%;
+  padding-right: 2%;
+  width: 96%;
+}
+.global-inside-1000px {
+  max-width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 2%;
+  padding-right: 2%;
+  width: 96%;
+}
+.global-inside-1200px {
+  max-width: 1300px; /* Edited by LZ 6-4-2024 - was 1200px */
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 2%;
+  padding-right: 2%;
+  width: 96%;
+}
+.global-inside-1500px {
+  max-width: 1500px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 2%;
+  padding-right: 2%;
+  width: 96%;
+}
+.global-inside3 {
+  max-width: 1100px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 2%;
+  padding-right: 2%;
+  margin-top: 30px;
+  text-align: center;
+}
+.global-inside4 {
+  max-width: 1100px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 2%;
+  padding-right: 2%;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 130%;
+  line-height: 1.2em;
+  margin-bottom: 20px;
+}
+.global-inside5 {
+  max-width: 900px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+.diversity-logo {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 300px;
+  display: block;
+  margin-top: 50px;
+}
+.heading1 {
+  color: #1369bb;
+  font-size: 2.9em;
+  line-height: normal;
+  text-align: center;
+  display: block;
+}
+.heading2 {
+  color: #1369bb;
+  font-size: 1.6em;
+  display: block;
+  margin-bottom: 10px;
+}
+#margin-btm {
+  margin-bottom: 0px;
+}
+.heading3 {
+  color: #1369bb;
+  font-size: 1.2em;
+}
+a.utilityBtn:link,
+a.utilityBtn:active,
+a.utilityBtn:visited {
+  background-color: #ab0132;
+  padding: 2px 10px 3px;
+  color: #ffffff !important;
+  font-size: 0.9em;
+  text-align: center;
+  width: auto;
+  text-decoration: none !important;
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+}
+a.utilityBtn:hover {
+  background-color: #800327;
+}
+.sm-txt {
+  font-size: 0.8em !important;
+  line-height: 1.1em !important;
+  margin-bottom: 20px;
+}
+.nowrap {
+  white-space: nowrap;
+  display: inline-block;
+}
+/**************************** HEADER ****************************/
+header {
+  width: 100%;
+  background-color: #ffffff;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  box-shadow: 0px 2px 10.79px 2.21px rgba(0, 0, 0, 0.19);
+}
+.header-txt {
+  color: #CB3340;/* Edited by LZ 6-4-2024 - was #b41e3b */
+  /*font-family: "Lato", sans-serif;*/ /* Turned off by LZ 6-4-2023*/
+  font-weight: 400;
+  font-size: 3.8em;
+  line-height: 1em;
+  letter-spacing: -0.9px;
+  text-align: center;
+  text-transform: uppercase;
+  word-spacing: 10px;
+}
+/**************************** BANNER ****************************/
+.banner-area {
+	width: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    padding-top: 460px;
+    background-image: url(../images/main/hero-banner.jpg);
+    padding-bottom: 80px;
+}
+.banner-headline {
+  width: 96%;
+  max-width: 1400px;/* Edited by LZ 08-11-2020 - was 1200px */
+  color: #ffffff;
+  text-align: center;
+  font-size: 5.4em; /* Edited by LZ 08-11-2020 - was 6em */
+  line-height: 1.1em;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: -0.02em;
+  font-weight: 900;
+  padding-left: 2%;
+  padding-right: 2%;
+  text-shadow: 2px 1px 9px rgba(0, 0, 0, 0.99);
+}
+/**************************** CONTENT ****************************/
+#intro-row {
+  color: #ffffff;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+#intro-row .body {
+  color: #000000;
+  /*font-family: "Lato", sans-serif;*/ /* Turned off by LZ 6-4-2023*/
+  font-size: 1.8em;
+  line-height: 1.3em;
+  font-weight: 400;
+}
+.subhead-row {
+  width: 100%;
+  background-color: #CB3340;/* Edited by LZ 6-4-2024 - was #b41e3b */
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.subhead-txt {
+  color: #ffffff;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 3em;
+  line-height: 1em;
+  letter-spacing: -0.9px;
+}
+.features-row {
+  width: 100%;
+  text-align: center;
+}
+.event-specialities {
+  color: #002c77;
+  font-size: 2.3em;
+  line-height: 1.2em;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 0px;
+  letter-spacing: -0.2px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.event-features-holder {
+  display: table;
+  border-collapse: separate;
+  border-spacing: 20px 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 1500px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.event-features-row {
+  display: table-row;
+}
+.event-features-info {
+  width: 46%;
+  display: table-cell;
+  padding: 2%;
+  background-color: #dbe5e8;
+}
+.event-features-info h2 {
+  color: #002c77;
+  font-size: 2.9em;
+  line-height: 1.1em;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 0px;
+  letter-spacing: -0.2px;
+}
+.global-shadow-box-full {
+  width: 96%;
+  max-width: 855px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-right: auto !important;
+  margin-left: auto !important;
+  padding-top: 30px;
+  padding-right: 2%;
+  padding-left: 2%;
+  padding-bottom: 30px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 10.79px 2.21px rgba(0, 0, 0, 0.19);
+  text-align: center;
+  font-size: 130%;
+  line-height: normal;
+}
+.global-shadow-box-top {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.roles-row {
+  width: 100%;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 30px;
+  background-image: url(../images/main/money-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-top: 15px solid #4da22e;
+}
+.roles-inner-holder {
+  display: inline-block;
+  /*font-family: "Lato", sans-serif;*/ /* Turned off by LZ 6-4-2023*/
+  vertical-align: middle;
+  width: 86% !important;
+  margin-top: 0px;
+  margin-right: 2%;
+  margin-left: 2%;
+  margin-bottom: 30px;
+  max-width: 290px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding-top: 4%;
+  padding-right: 3%;
+  padding-bottom: 4%;
+  padding-left: 3%;
+  -webkit-box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.35);
+}
+#roles-inner-01 {
+  position: relative;
+}
+#roles-inner-02 {
+  position: relative;
+}
+#roles-inner-03 {
+  position: relative;
+}
+.roles-inner-holder .title {
+  font-size: 2.8em;
+  line-height: normal;
+  display: block;
+  color: #000000;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+.roles-inner-holder .subhead {
+  font-size: 5em;
+  line-height: normal;
+  display: block;
+  color: #00000;
+  font-weight: 900;
+}
+.roles-inner-holder .body {
+  font-size: 1.8em;
+  line-height: 1.1em;
+  display: block;
+  color: #00000;
+  font-weight: 400;
+  font-style: italic;
+}
+.roles-row .smalltxt {
+  width: 96%;
+  padding-right: 2%;
+  padding-left: 2%;
+  font-size: 2.3em;
+  line-height: normal;
+  display: block;
+  color: #ffffff;
+  font-weight: 600;
+  text-shadow: 2px 1px 4px rgb(24, 37, 17);
+}
+.eligibility-row {
+  width: 100%;
+  text-align: left;
+  padding-top: 40px;
+}
+.eligibility-row .title {
+  font-size: 2em;
+  line-height: 1em;
+  display: block;
+  color: #CB3340;/* Edited by LZ 6-4-2024 - was #b41e3b */
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.eligibility-row .subhead {
+  font-size: 2.2em;
+  line-height: 1.1em;
+  display: block;
+  color: #00000;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.eligibility-row .body {
+  font-size: 1.5em;
+  line-height: 1.3em;
+  display: block;
+  color: #00000;
+  font-weight: 400;
+}
+#guidelines {
+  border-bottom: 1px solid #CB3340;/* Edited by LZ 6-4-2024 - was #b41e3b */
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+}
+#guidelines li {
+  list-style-type: disc !important;
+  line-height: 1.5em !important;
+  margin-bottom: 25px !important;
+  /*	margin-left: 12px !important;*/
+  color: #000000;
+  width: 100%;
+}
+#guidelines ul {
+  margin-bottom: 20px !important;
+  display: block !important;
+  margin-top: 0px;
+}
+.all-caps {
+  text-transform: uppercase;
+}
+.content {
+  width: 100%;
+}
+/*BULLETED FEATURES*/
+.table-with-left-image {
+  display: table;
+  margin-right: auto;
+  margin-left: auto; /* -- Change this depending on your page spacing --*/
+  background-color: #ffffff;
+  width: 100%;
+}
+.table-with-left-image2 {
+  display: table;
+  margin-right: auto;
+  margin-left: auto; /* -- Change this depending on your page spacing --*/
+  background-color: #b9bfd8;
+  width: 100%; /* -- can include a max-width here if you want -- */
+  border-bottom: 7px solid #ffffff;
+}
+.table-with-right-image {
+  display: table;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #006375;/* Edited by LZ 6-4-2024 - was #37718e */
+  width: 100%;
+  color: #ffffff;
+}
+.table-row {
+  display: table-row;
+}
+.table-cell-left {
+  display: table-cell;
+  vertical-align: middle;
+  width: 50%;
+  text-align: right; /* -- this is for inline element placement, not actual text --*/
+}
+.table-cell-left2 {
+  display: table-cell;
+  vertical-align: middle;
+  width: 50%;
+  text-align: right; /* -- this is for inline element placement, not actual text --*/
+}
+.table-cell-right {
+  display: table-cell;
+  vertical-align: middle;
+  width: 50%;
+  text-align: left;
+}
+.table-cell-text {
+  display: inline-block;
+  text-align: left;
+  padding-top: 70px;
+  padding-right: 60px;
+  padding-left: 60px;
+  padding-bottom: 70px;
+  width: 70%;
+  max-width: 600px; /* -- You basically just set this to half of the width of the space your content is going to sit in in the center of the page, minus the padding -- */
+}
+/* ---- Putting in Your Images ---- */
+.table-with-left-image .table-cell-left {
+  background-position: 80% center; /* possition will cange based on alignment of image and stuff for responsive... plan ahead -- */
+  background-size: 40% auto;
+  background-repeat: no-repeat;
+  padding-top: 20%;
+  padding-right: 0px;
+  padding-left: 0px; /* -- the % is basically just the ratio of the height to width multiplied by the % of the width of the column... in this case 50% x 50% = 25% -- */
+  background-image: url(../images/main/hand-holding-money.png);
+}
+.table-with-left-image2 .table-cell-left {
+  background-image: url(../images/main/background-3.jpg);
+  background-position: center right; /* possition will cange based on alignment of image and stuff for responsive... plan ahead -- */
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 20%;
+  padding-right: 0px;
+  padding-left: 0px; /* -- the % is basically just the ratio of the height to width multiplied by the % of the width of the column... in this case 50% x 50% = 25% -- */
+}
+.table-with-right-image .table-cell-right {
+  background-image: url(../images/main/nurse-team.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0px 0px 0% 0px;
+}
+.features-title {
+  font-weight: 700;
+  font-size: 3.2em;
+  line-height: 1em;
+  letter-spacing: 0.01em;
+  margin-bottom: 20px;
+}
+.features-subtitle {
+  font-size: 2.6em;
+  line-height: 1.4em;
+  letter-spacing: 0.01em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.features-text {
+  font-weight: 400;
+  font-size: 1.6em;
+  margin-top: 10px;
+  line-height: 1.3em;
+}
+.features-text li {
+  list-style-type: disc !important;
+  line-height: 1.2em !important;
+  margin-bottom: 7px !important;
+  /*	margin-left: 12px !important;*/
+  color: #002c76;
+  width: 100%;
+}
+.features-text ul {
+  margin-bottom: 0px !important;
+  display: block !important;
+  margin-top: 0px;
+}
+/**************************** FOOTER ****************************/
+footer {
+  width: auto;
+  text-align: center;
+  color: #ffffff;
+}
+#footer-logo {
+  width: 30%;
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  margin-right: 4%;
+  float: left;
+  max-width: 300px;
+  margin-bottom: 30px;
+}
+#footer-logos-holder {
+  padding-bottom: 80px; /* Edited by LZ 6-4-2024 - was 40px */
+  margin-bottom: 40px;
+}
+#footer-social-holder {
+  width: 49.5%;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+  float: right;
+}
+#footer-social-holder-txt {
+  width: 49.5%;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+  color: #cb3340;/* Edited by LZ 6-4-2024 - was #a80432 */
+  text-transform: uppercase;
+  font-size: 1.6em;
+  line-height: normal;
+}
+.footer-social-icons-row {
+  width: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+.footer-social-icons {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 0;
+  margin-left: 3px;
+  background-color: #ffffff;
+  display: inline-block;
+  -webkit-box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.17);
+  -moz-box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.17);
+  box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.17);
+}
+
+p.footnote {
+  font-size: 13px;
+  line-height: 1.4;
+}
